@@ -1,0 +1,191 @@
+.founders-wrapper {
+  margin: 60px auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.founder-section {
+  text-align: center;
+}
+
+.founder-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #c5ad98;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.founder-description {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #3d2e12;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+}
+.team-section {
+  margin: 60px auto;
+  max-width: 600px;
+  padding: 0 20px;
+  text-align: center;
+}
+.intro-section {
+  max-width: 900px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+.intro-paragraph {
+  font-size: 18px;
+  color: #3d2e12;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+.vision-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+.vision-paragraph {
+  font-size: 18px;
+  color: #3d2e12;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+.reviews-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.review-card {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: center;
+}
+
+.review-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  font-size: 16px;
+  color: #3d2e12;
+  line-height: 1.6;
+}
+.star-rating {
+  color: #ffc107; 
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.reviews-cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #c5ad98;
+  color: #3d2e12;
+  border-radius: 8px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a88b6d;
+  color: white;
+}
+.video-section {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+.video-wrapper video {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #c5ad98;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+.founder-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.review-card {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  cursor: pointer; /* מוסיף סמן של לחיץ */
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #e6dfd7;
+}
+
+.review-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}

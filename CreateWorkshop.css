@@ -1,0 +1,120 @@
+
+body {
+  background-color: #f5f0e8;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+
+.registration-form {
+  background-color: #f5f0e8;
+  padding: 60px 20px;
+}
+
+.registration-wrapper {
+  background-color: #fffdf8;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2dcd0;
+}
+
+
+.registration-wrapper h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #3d2e12;
+  border-bottom: 2px solid #c5ad98;
+  padding-bottom: 10px;
+}
+
+.registration-wrapper form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.registration-wrapper label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  color: #3d2e12;
+}
+
+.registration-wrapper input[type="text"],
+.registration-wrapper input[type="email"],
+.registration-wrapper input[type="number"],
+.registration-wrapper input[type="date"],
+.registration-wrapper input[type="time"],
+.registration-wrapper input[type="file"],
+.registration-wrapper textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "Rubik", sans-serif;
+  transition: border-color 0.2s;
+}
+
+.registration-wrapper input:focus,
+.registration-wrapper textarea:focus {
+  border-color: #c5ad98;
+  outline: none;
+}
+
+.cc-full {
+  grid-column: 1 / 3;
+}
+
+.checkbox-label {
+  grid-column: 1 / 3;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+
+.registration-wrapper button {
+  grid-column: 1 / 3;
+  padding: 14px;
+  background-color: #c5ad98;
+  color: #3d2e12;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.registration-wrapper button:hover {
+  background-color: #a88b6d;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  .registration-wrapper form {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-full,
+  .registration-wrapper button,
+  .checkbox-label {
+    grid-column: 1 / 2;
+  }
+}
+.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  font-size: 0.9em;
+  color: red;
+}

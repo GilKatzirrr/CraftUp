@@ -1,0 +1,101 @@
+.workshops-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px;
+  font-family: "Rubik", sans-serif;
+}
+
+.workshop-card {
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.workshop-card:hover {
+  transform: translateY(-10px);
+}
+
+.workshop-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.workshop-card h2 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.workshop-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.workshop-date {
+  font-size: 16px;
+  font-weight: bold;
+  color: #25591f;
+}
+
+.register-button {
+  background-color: #25591f;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.register-button:hover {
+  background-color: #c5ad98;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets or screens with a max-width of 768px */
+@media (max-width: 768px) {
+  .workshops-container {
+    justify-content: center; /* Centers the cards */
+    padding: 20px;
+  }
+
+  .workshop-card {
+    width: 90%;
+  }
+
+  .workshop-card h2 {
+    font-size: 18px;
+  }
+
+  .workshop-card p {
+    font-size: 13px;
+  }
+}
+
+/* For mobile screens with a max-width of 480px */
+@media (max-width: 480px) {
+  .workshops-container {
+    padding: 10px;
+  }
+
+  .workshop-card {
+    width: 100%; /* Makes the cards take up the full width */
+  }
+
+  .workshop-card h2 {
+    font-size: 16px;
+  }
+
+  .workshop-card p {
+    font-size: 12px;
+  }
+}

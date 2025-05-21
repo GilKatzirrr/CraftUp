@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CraftUp | Workshop Registration</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="RegisterStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="menu">
+      <div class="logo" style="order: 1">
+        <img src="images/CraftUp.png" width="100" height="100" alt="Logo" />
+      </div>
+      <div class="workshops" style="order: 5">
+        <a href="WorkshopsPage.html">
+          <img src="images/Workshop.png" width="30" height="30" alt="סדנאות" />
+          <span>Workshops</span>
+        </a>
+      </div>
+      <div class="aboutus" style="order: 4">
+        <a href="AboutUs.html">
+          <img src="images/search.png" width="30" height="30" alt="אודות" />
+          <span>About us</span>
+        </a>
+      </div>
+      <div class="home" style="order: 3">
+        <a href="index.html">
+          <img src="images/Home.png" width="30" height="30" alt="עמוד הבית" />
+          <span>Home Page</span>
+        </a>
+      </div>
+      <div class="login" style="order: 2">
+        <a href="Login.html">
+          <img src="images/Login.png" width="30" height="30" alt="התחברות" />
+          <span>Login</span>
+        </a>
+      </div>
+    </div>
+    <!-- Header -->
+    <div class="workshop-header">
+      <div class="overlay">
+        <h1>Pottery Workshop</h1>
+        <p>Join us for a hands-on creative experience!</p>
+      </div>
+    </div>
+
+    <!-- Workshop Info -->
+    <section class="workshop-info">
+      <div class="info-box">
+        <h2><i class="fas fa-info-circle"></i> Workshop Details</h2>
+        <p class="description">
+          This beginner-friendly workshop covers basic techniques and allows you
+          to create a personal pottery piece.
+        </p>
+        <div class="details-row">
+          <p>
+            <i class="fas fa-calendar-alt"></i> <strong>Date:</strong> June 25,
+            2025
+          </p>
+          <p>
+            <i class="fas fa-clock"></i> <strong>Time:</strong> 6:00 PM – 8:30
+            PM
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-form">
+      <div class="registration-wrapper">
+        <h2>Registration Form</h2>
+        <form novalidate class="registration-form">
+          <div class="cc-full">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullName" class="full-width" />
+          </div>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+
+          <div class="cc-full">
+            <label for="cardnumber">Credit Card Number:</label>
+            <input type="text" id="creditCard" class="full-width" />
+          </div>
+
+          <label for="expdate">Expiry Date:</label>
+          <input type="month" id="expdate" name="expdate" required />
+
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" maxlength="4" required />
+
+          <label class="checkbox-label">
+            <input type="checkbox" id="terms" required />
+            I agree to the <a href="#">Terms and Conditions</a>
+          </label>
+
+          <button type="submit">Pay and Register</button>
+        </form>
+      </div>
+    </section>
+
+    <div id="messageBox" class="message-box"></div>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="#">News</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms Of Use</a>
+        <a href="#">Common Q&A</a>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright ©2025; Designed by <strong>CraftUp</strong></p>
+      </div>
+    </footer>
+    <script src="Register.js"></script>
+  </body>
+</html>

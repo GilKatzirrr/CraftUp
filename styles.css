@@ -1,0 +1,164 @@
+body {
+  background-color: #e1ddd5;
+  width: 100%;
+  margin: 0;
+}
+
+/* === HEADER MENU === */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 110px; 
+  background-color: #9aac8f;
+  padding: 10px 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+
+.menu img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.menu .logo img {
+  width: 150px; 
+  height: auto;
+  margin-top: 12px; 
+}
+
+.menu span {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c5ad98;
+  text-decoration: underline;
+}
+
+/* === HERO IMAGE + TEXT === */
+.cta-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.cta-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === FOOTER === */
+.modern-footer {
+  background-color: #9aac8f;
+  color: #3d2e12;
+  text-align: center;
+  padding: 40px 20px 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  display: inline-block;
+  background-color: #fff;
+  color: #3d2e12;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background-color: #c5ad98;
+  color: white;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #3d2e12;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #c5ad98;
+  text-decoration: underline;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #3d2e12;
+  margin: 0;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .menu div {
+    order: unset !important;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .footer-social a {
+    margin: 10px 5px;
+  }
+}
+
+.message-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  display: none;
+}
+
+.message-box.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message-box.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+input.error {
+  border-color: #721c24;
+  background-color: #f8d7da;
+}
+
+input.success {
+  border-color: #155724;
+}
